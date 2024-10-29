@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+.TitleDriection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    border-bottom: solid 5px black;
+}
+
+.TitleImage {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx9M13_YdXgDOZp0IKvaYPn-ccTXFRDleSTg&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: solid 0px;
+    border-radius: 50%;
+    text-align:center;
+    width: 265px;
+    height: 125px;
+    margin-top: 20px;
+}
+
+.Title {
+    text-shadow: 0 0 5px #ffffff, 0 0 6px #ffffff;
+    margin: 0;
+    padding-top: 45px;
+}
+
+.LinkBoxes {
+    display: flex;
+    padding-top: 90px;
+    gap: 6em;
+    font-size: 20px;
+}
+
+@media (max-width:865px) {
+    .TitleDriection {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding-left: 20px;
+    }
+
+    .TitleImage {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .LinkBoxes {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .Title {
+        font-size: 40px;
+        padding-top: 60px;
+    }
+
+    .LinkBoxes {
+        font-size: 30px;
+        gap: 5em;
+    }
+
+    .TitleImage {
+        height: 175px;
+        width: 375px;
+    }
+}
